@@ -19,8 +19,8 @@ public static void main (String [] args){
     System.out.println("write a conjunction");
     String conjunction = word.nextLine();
     System.out.println("write a number");
-    int number = word.nextLine();
-    System.out.println("the " + adjective + " " + noun + " " + adverb + " " + verb + " " + preposition + " the " + number + " dogs, " + conjunction + " the owner and " + pronoun + " dogs bit off the " + noun + "'s leg.")
+    int number = word.nextInt();
+    System.out.println("the " + adj + " " + noun + " " + adverb + " " + verb + " " + preposition + " the " + number + " dogs, " + conjunction + " the owner and " + pronoun + " dogs bit off the " + noun + "'s leg.");
 }
 
 }
