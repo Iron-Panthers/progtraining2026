@@ -7,7 +7,7 @@ public class Main{
 // hi my name is samantha
 
 public static void main (String [] args){
-    System.out.print("Hi World.");
+    System.out.print("Hi world.");
 }
 
 }
