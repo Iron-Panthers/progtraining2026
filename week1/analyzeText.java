@@ -34,9 +34,6 @@ public class analyzeText {
         return vowelCount;
     }
     
-    public static boolean isAnagram(String text){
-
-    }
     public static void main (String [] args){
         Scanner input = new Scanner(System.in);
         System.out.println("is your string a palindrome?");

@@ -22,6 +22,12 @@ public class random {
         boolean isCool = input.nextBoolean();
 
         double gpa = rand.nextDouble(4.0);
-        System.out.println(gpa);
+        System.out.println("ur gpa is:" + gpa);
+        int toesCut = rand.nextInt(11);
+        System.out.println("i hacked ur toes and cut off " + toesCut + " toes muahahaha");
+        double money = rand.nextDouble(1000000);
+        System.out.println("i hacked ur bank account and stole $" + money + " muahahaha");
+        System.out.println("thank u for ur info");
+        input.close();
     }
 }

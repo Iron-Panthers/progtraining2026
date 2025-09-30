@@ -266,12 +266,17 @@ public class ticTacToe {
             }
 
             //Swap player
+            if (playerNum == 3){
+                playerNum = 1;
+            } else {
+                playerNum += 1;
+            }
             if (playerNum == 1){
-                playerNum = 2;
                 symbol = "[O]";
             } else if (playerNum == 2){
-                playerNum = 1;
                 symbol = "[X]";
+            } else if (playerNum == 3){
+                symbol = "[I]";
             }
         }
         input.close();

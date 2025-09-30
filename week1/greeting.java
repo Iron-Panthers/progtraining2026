@@ -26,5 +26,6 @@ public class greeting {
                 System.out.println("hi there " + name);
                 break;
         }
+        input.close();
     }
 }
