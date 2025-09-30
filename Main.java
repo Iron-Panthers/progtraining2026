@@ -1,12 +1,8 @@
-package progtraining2026;
+import java.util.Scanner;
 
-// hi freshies your so sigma
-public class Main{
-
-
-
-public static void main (String [] args){
-    System.out.print("Hi World.");
-}
-
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        input.nextLine();
+    }
 }
