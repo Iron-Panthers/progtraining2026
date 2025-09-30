@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.List;
-
+// wow this code is so good
 public class analyzeText {
     public static String reverse(String text){
         String reversed = "";
@@ -34,6 +34,9 @@ public class analyzeText {
         return vowelCount;
     }
     
+    public static boolean isAnagram(String text){
+        return true;
+    }
     public static void main (String [] args){
         Scanner input = new Scanner(System.in);
         System.out.println("is your string a palindrome?");
