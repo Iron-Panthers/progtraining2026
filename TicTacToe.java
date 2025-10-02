@@ -18,6 +18,7 @@ public class TicTacToe {
         int turn;
         boolean compWin;
         boolean playerWin;
+        boolean tie;
 
         System.out.println("Hello! Welcome to Tic-Tac-Toe!");
 
@@ -35,11 +36,12 @@ public class TicTacToe {
 
             compWin = false;
             playerWin = false;
+            tie = false;
 
             System.out.println("Would you like to play as X or O?");
 
             player = input.nextLine();
-            if (player.equals("O")) {
+            if (player.equalsIgnoreCase("O")) {
                 comp = "X";
                 turn = 0;
             }
@@ -118,7 +120,11 @@ public class TicTacToe {
                     (grid[2][0] == grid[1][1] && grid[1][1] == grid[0][2] && grid[0][2] == player)) {
                     playerWin = true;
                 }
-                if (playerWin || compWin) {
+                else if (grid[0][0] != " " && grid[0][1] != " " && grid[0][2] != " " && grid[1][0] != " " &&
+                grid[1][1] != " " && grid[1][2] != " " && grid[2][0] != " " && grid[2][1] != " " && grid[2][2] != " ") {
+                    tie = true;
+                }
+                if (playerWin || compWin || tie) {
                     break;
                 }
             }
@@ -128,13 +134,16 @@ public class TicTacToe {
             else if (playerWin) {
                 System.out.println("The player wins!");
             }
+            else if (tie) {
+                System.out.println("It's a tie!");
+            }
             
             System.out.println("Would you like to play again?");
             if (input.nextLine().equals("no")) {
                 break;
             }
 
-            }
+        }
 
         }
 
