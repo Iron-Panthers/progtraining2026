@@ -41,8 +41,10 @@ public class TicTacTwo {
                                     case 8: 
                                         continueGame(8, 5);   
                                         tie(4);
+                                        break;
                                     default:
                                         no();
+                                        break;
                                 }
                                 break;
                             case 7:
@@ -53,6 +55,7 @@ public class TicTacTwo {
                                 break;
                             default:
                                 no();
+                                break;
                         }
                         break;
                         //done
@@ -75,8 +78,10 @@ public class TicTacTwo {
                                     case 8: 
                                         continueGame(8, 5);   
                                         tie(6);
+                                        break;
                                     default:
                                         no();
+                                        break;
                                 }
                                 break;                            
                             case 5:
@@ -93,8 +98,10 @@ public class TicTacTwo {
                                     case 8: 
                                         continueGame(8, 4);   
                                         tie(6);
+                                        break;
                                     default:
                                         no();
+                                        break;
                                 }
                                 break;
                             case 6:
@@ -113,6 +120,7 @@ public class TicTacTwo {
                                         break;
                                     default:
                                         no();
+                                        break;
                                 }
                                 break;
                             case 7:
@@ -126,11 +134,14 @@ public class TicTacTwo {
                                     case 6:
                                         continueGame(6, 5);   
                                         tie(8);
+                                        break;
                                     case 8: 
                                         continueGame(8, 5);   
-                                        tie(6);                                        
+                                        tie(6);   
+                                        break;                                     
                                     default:
                                         no();
+                                        break;
                                 }
                                 break;   
                                 //done                         
@@ -141,15 +152,19 @@ public class TicTacTwo {
                                 switch (move) {
                                     case 4:
                                         continueGame(4, 7);   
-                                        tie(6);                                        
+                                        tie(6);    
+                                        break;                                    
                                     case 6:
                                         continueGame(6, 7);   
                                         tie(4);
+                                        break;
                                     case 7: 
                                         continueGame(7, 4);   
-                                        tie(6);                                        
+                                        tie(6);
+                                        break;                                        
                                     default:
                                         no();
+                                        break;
                             }                            
                             default:
                                 no();
@@ -182,13 +197,15 @@ public class TicTacTwo {
                                         compWin(2, 3);
                                         break;
                                     case 3:
-                                        compWin(3, 2);
+                                        continueGame(3, 2);
                                         tie(6);
+                                        break;
                                     case 6:
                                         compWin(6, 3);
                                         break;
                                     default:
                                         no();
+                                        break;
                                 }
                                 break;
                             default:
@@ -221,17 +238,22 @@ public class TicTacTwo {
                                     case 3:
                                         continueGame(3, 6);
                                         tie(4);
+                                        break;
                                     case 4:
                                         continueGame(4, 6);
                                         tie(3);
+                                        break;
                                     case 6:
                                         continueGame(6, 4);
                                         tie(3);
+                                        break;
                                     default:
                                         no();
+                                        break;
                                 }
                             default: 
                                 no();
+                                break;
                         }
                         break;
                         //done
@@ -248,8 +270,10 @@ public class TicTacTwo {
                                     break;
                                 case 4:
                                     compWin(4, 8);
+                                    break;
                                 case 5:
                                     compWin(5, 8);
+                                    break;
                                 case 8:
                                     continueGame(8, 3);
                                     ask();
@@ -257,13 +281,17 @@ public class TicTacTwo {
                                     switch (move) {
                                         case 2:
                                             compWin(2, 5);
+                                            break;
                                         case 4:
                                             compWin(4, 5);
+                                            break;
                                         case 5:
                                             continueGame(5, 2);
                                             playerWin(4);
+                                            break;
                                         default:
                                             no();
+                                            break;
                                     }
                                     break;
                                 default:
@@ -283,11 +311,14 @@ public class TicTacTwo {
                                 switch (move) {
                                     case 5:
                                         compWin(5, 6);
+                                        break;
                                     case 6:
                                         continueGame(6, 5);
                                         tie(8);
+                                        break;
                                     case 8:
                                         compWin(8, 6);
+                                        break;
                                 }
                                 break;
                             case 3:
@@ -297,14 +328,18 @@ public class TicTacTwo {
                                 switch (move) {
                                     case 5:
                                         playerWin(5);
+                                        break;
                                     case 6:
                                         continueGame(6, 5);
                                         tie(8);
+                                        break;
                                     case 8:
                                         continueGame(8, 5);
                                         tie(6);
+                                        break;
                                     default:
                                         no();
+                                        break;
                                 }
                                 break;
                                 //done @9:44
@@ -315,13 +350,17 @@ public class TicTacTwo {
                                 switch (move) {
                                     case 2:
                                         compWin(2, 6);
+                                        break;
                                     case 6:
                                         continueGame(6, 2);
                                         tie(8);
+                                        break;
                                     case 8:
                                         compWin(8, 6);
+                                        break;
                                     default:
                                         no();
+                                        break;
                                 }
                             case 6:
                                 continueGame(6, 5);
@@ -331,14 +370,18 @@ public class TicTacTwo {
                                     case 2:
                                         continueGame(2, 3);
                                         tie(8);
+                                        break;
                                     case 3:
                                         continueGame(3, 2);
                                         tie(8);
+                                        break;
                                     case 8:
                                         continueGame(8, 2);
                                         tie(3);
+                                        break;
                                     default:
                                         no();
+                                        break;
                                 }
                             case 8:
                                 continueGame(8, 3);
@@ -347,16 +390,21 @@ public class TicTacTwo {
                                 switch (move) {
                                     case 2:
                                         compWin(2, 6);
+                                        break;
                                     case 5:
                                         compWin(5, 6);
+                                        break;
                                     case 6:
                                         continueGame(6, 2);
                                         tie(5);
+                                        break;
                                     default:
                                         no();
+                                        break;
                                 }
                             default:
                                 no();
+                                break;
                         }
                         break;
                         //done @9:54
@@ -367,10 +415,13 @@ public class TicTacTwo {
                         switch(move) {
                             case 2:
                                 compWin(2, 6);
+                                break;
                             case 4:
                                 compWin(2, 6);
+                                break;
                             case 5:
                                 compWin(2, 6);
+                                break;
                             case 6:
                                 continueGame(6, 5);
                                 ask();
@@ -378,16 +429,2086 @@ public class TicTacTwo {
                                 switch(move) {
                                     case 2:
                                         compWin(2, 7);
+                                        break;
                                     case 4:
                                         compWin(2, 7);
+                                        break;
                                     case 7:
                                         continueGame(7, 4);
                                         tie(2);
+                                        break;
                                     default:
                                         no();
+                                        break;
                                 }
                             case 7:
                                 compWin(2, 6);
+                                break;
+                            default:
+                                no();
+                                break;
+                        }
+                        break;
+                    default:
+                        no();
+                        break;
+                }
+                break;
+                //done @9:58
+            case 2:
+                continueGame(2, 9);
+                ask();
+                move = input.nextInt();
+                switch(move) {
+                    case 1:
+                        continueGame(1, 3);
+                        ask();
+                        move = input.nextInt();
+                        switch(move) {
+                            case 4:
+                                compWin(4, 6);
+                                break;
+                            case 5:
+                                compWin(5, 6);
+                                break;
+                            case 6:
+                                continueGame(6, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch(move) {
+                                    case 4:
+                                        compWin(4, 7);
+                                        break;
+                                    case 7:
+                                        continueGame(7,4);
+                                        tie(8);
+                                        break;
+                                    case 8:
+                                        compWin(8, 7);
+                                        break;
+                                    default:
+                                        no();
+                                        break;
+                                }
+                            case 7:
+                                compWin(7, 6);
+                                break;
+                            case 8:
+                                compWin(8, 6);
+                                break;
+                            default:
+                                no();
+                                break;
+                        }
+                    case 3:
+                        continueGame(3, 1);
+                        ask();
+                        move = input.nextInt();
+                        switch(move) {
+                            case 4:
+                                compWin(4, 5);
+                                break;
+                            case 5:
+                                continueGame(5, 8);
+                                ask();
+                                move = input.nextInt();
+                                switch(move) {
+                                    case 4:
+                                        compWin(4, 7);
+                                        break;
+                                    case 6:
+                                        compWin(6, 7);
+                                        break;
+                                    case 7:
+                                        playerWin(7);
+                                        break;
+                                    default: 
+                                        no();
+                                        break;
+                                }
+                                break;
+                            case 6:
+                                compWin(6, 5);
+                                break;
+                            case 7:
+                                compWin(7, 5);
+                                break;
+                            case 8:
+                                compWin(8, 5);
+                                break;
+                            default:
+                                no();
+                                break;
+                        }
+                    case 4:
+                        continueGame(4, 1);
+                        ask();
+                        move = input.nextInt();
+                        switch(move) {
+                            case 3:
+                                compWin(3, 5);
+                                break;
+                            case 5:
+                                continueGame(5,6);
+                                ask();
+                                move = input.nextInt();
+                                switch(move) {
+                                    case 3:
+                                        continueGame(3,8);
+                                        playerWin(7);
+                                        break;
+                                    case 7:
+                                        compWin(7, 3);
+                                        break;
+                                    case 8:
+                                        compWin(8, 3);
+                                        break;
+                                    default:
+                                        no();
+                                        break;
+                                }
+                            case 6:
+                                compWin(3, 5);
+                                break;
+                            case 7:
+                                compWin(3, 5);
+                                break;
+                            case 8:
+                                compWin(3, 5);
+                                break;
+                            default:
+                                no();
+                                break;
+                        }
+                        break;
+                        //done @10:33
+                    case 5:
+                        continueGame(5, 8);
+                        ask();
+                        move = input.nextInt();
+                        switch(move) {
+                            case 1:
+                                compWin(1, 7);
+                                break;
+                            case 3:
+                                compWin(3, 7);
+                                break;
+                            case 4:
+                                compWin(4, 7);
+                                break;
+                            case 6:
+                                compWin(6, 7);
+                                break;
+                            case 7:
+                                continueGame(7, 4);
+                                ask();
+                                move = input.nextInt();
+                                switch(move) {
+                                    case 3:
+                                        playerWin(3);
+                                        break;
+                                    case 6:
+                                        playerWin(6);
+                                        break;
+                                    default:
+                                        no();
+                                        break;
+                                }
+                            default:
+                                no();
+                                break;
+                        }
+                        break;
+                        //done @10:39
+                    case 6:
+                        continueGame(6, 1);
+                        ask();
+                        move = input.nextInt();
+                        switch(move) {
+                            case 3:
+                                compWin(3, 5);
+                                break;
+                            case 4:
+                                compWin(4, 5);
+                                break;
+                            case 5:
+                                continueGame(5, 8);
+                                ask();
+                                move = input.nextInt();
+                                switch(move) {
+                                    case 3:
+                                        compWin(3, 7);
+                                        break;
+                                    case 4:
+                                        playerWin(4);
+                                        break;
+                                    case 7:
+                                        continueGame(7, 3);
+                                        playerWin(4);
+                                        break;
+                                    default:
+                                        no();
+                                        break;
+                                }
+                            case 7:
+                                compWin(7, 5);
+                                break;
+                            case 8:
+                                compWin(8, 5);
+                                break;
+                            default:
+                                no();
+                                break;
+                        }
+                        break;
+                    case 7:
+                        continueGame(7, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch(move) {
+                            case 1:
+                                continueGame(1, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch(move) {
+                                    case 4:
+                                        playerWin(4);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 4);
+                                        tie(8);
+                                        break;
+                                    case 8:
+                                        compWin(8, 6);
+                                        break;
+                                    default:
+                                        no();
+                                        break;
+                                }
+                                break;
+                            case 3:
+                                compWin(3, 1);
+                                break;
+                            case 4:
+                                compWin(4, 1);
+                                break;
+                            case 6:
+                                compWin(6, 1);
+                                break;
+                            case 8:
+                                compWin(8, 1);
+                                break;
+                            default:
+                                no();
+                                break;
+                        }
+                    case 8:
+                        continueGame(8, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch(move) {
+                            case 1:
+                                continueGame(1, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch(move) {
+                                    case 4:
+                                        compWin(4, 6);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 4);
+                                        tie(7);
+                                        break;
+                                    case 7:
+                                        compWin(7, 6);
+                                        break;
+                                    default:
+                                        no();
+                                        break;
+                                }
+                            case 3:
+                                compWin(3, 1);
+                                break;
+                            case 4:
+                                compWin(4, 1);
+                                break;
+                            case 5:
+                                compWin(5, 1);
+                                break;
+                            case 6:
+                                compWin(6, 1);
+                                break;
+                            case 7:
+                                compWin(7, 1);
+                                break;
+                            default:
+                                no();
+                                break;
+                        }
+                    default:
+                        no();
+                        break;
+                }
+                break;
+                //done @11:06
+            case 3:
+                continueGame(3, 7);   
+                ask();
+                move = input.nextInt();
+                switch (move) {
+                    case 1:
+                        continueGame(1, 2);   
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 4:
+                                continueGame(4, 8);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 5:
+                                        compWin(5, 9);
+                                        break;
+                                    case 6:
+                                        compWin(5, 9);
+                                        break;
+                                    case 9:
+                                        compWin(9, 5);
+                                        break;
+                                    default:
+                                        no();
+                                        break;
+                                }
+                                break;
+                            case 5:
+                                continueGame(5, 9);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        compWin(4, 8);
+                                        break;
+                                    case 6:
+                                        compWin(6, 8);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 4);
+                                        tie(6);
+                                        break;
+                                    default:
+                                        no();
+                                        break;
+                                }
+                                break;
+                            case 6:
+                                continueGame(6, 9);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        compWin(4, 8);
+                                        break;
+                                    case 5:
+                                        compWin(5, 8);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 5);
+                                        tie(4);
+                                        break;
+                                    default:
+                                        no();
+                                        break;
+                                }
+                                break;
+                            case 8:
+                                continueGame(8, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        continueGame(4, 6);
+                                        tie(9);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 9);
+                                        tie(4);
+                                        break;
+                                    case 9:
+                                        continueGame(9, 6);
+                                        tie(4);
+                                        break;
+                                    default:
+                                        no();
+                                        break;
+                                }
+                                break;
+                            case 9:
+                                continueGame(9, 6);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        continueGame(4, 5);
+                                        tie(8);
+                                        break;
+                                    case 5:
+                                        playerWin(5);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 5);
+                                        tie(4);
+                                        break;
+                                    default:
+                                        no();
+                                        break;
+                                }
+                                break;
+                            default:
+                                no();
+                                break;
+                        }
+                        break;
+                    case 2:
+                        continueGame(2, 1);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 4:
+                                continueGame(4, 9);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 5:
+                                        compWin(5, 8);
+                                        break;
+                                    case 6:
+                                        compWin(6, 8);
+                                        break;
+                                    case 8:
+                                        compWin(8, 5);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 5:
+                                compWin(5, 4);
+                                break;
+                            case 6:
+                                compWin(6, 4);
+                                break;
+                            case 8:
+                                compWin(8, 4);
+                                break;
+                            case 9:
+                                compWin(9, 4);
+                                break;
+                            default:
+                                no();
+                                break;
+                        }
+                        break;
+                    case 4:
+                        continueGame(4, 9);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                        case 1:
+                            compWin(1, 8);
+                            break;
+                        case 2:
+                            compWin(2, 8);
+                            break;
+                        case 5:
+                            compWin(5, 8);
+                            break;
+                        case 6:
+                            compWin(6, 8);
+                            break;
+                        case 8:
+                            continueGame(8, 5);
+                            ask();
+                            move = input.nextInt();
+                            switch (move) {
+                                case 1:
+                                    continueGame(1, 2);
+                                    tie(6);
+                                    break;
+                                case 2:
+                                    compWin(2, 1);
+                                    break;
+                                case 6:
+                                    compWin(6, 1);
+                                    break;
+                                default:
+		                            no();
+                            }
+                            break;
+                        default:
+                            no();
+                        }
+                    
+                        break;
+                    case 5:
+                        continueGame(5, 9);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                compWin(1, 8);
+                                break;
+                            case 2:
+                                compWin(2, 8);
+                                break;
+                            case 4:
+                                compWin(4, 8);
+                                break;
+                            case 6:
+                                compWin(6, 8);
+                                break;
+                            case 8:
+                                continueGame(8, 2);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        continueGame(1, 6);
+                                        tie(4);
+                                        break;
+                                    case 4:
+                                        continueGame(4, 6);
+                                        tie(1);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 4);
+                                        tie(1);
+                                        break;
+                                    default:
+		                                no();
+                                    }
+
+                                break;
+                            default:
+		                        no();
+                        }
+                        break;
+                    case 6:
+                        continueGame(6, 9);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                compWin(1, 8);
+                                break;
+                            case 2:
+                                compWin(2, 8);
+                                break;
+                            case 4:
+                                compWin(4, 8);
+                                break;
+                            case 5:
+                                compWin(5, 8);
+                                break;
+                            case 8:
+                                continueGame(8, 1);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 5);
+                                        break;
+                                    case 4:
+                                        compWin(4, 5);
+                                        break;
+                                    case 5:
+                                        compWin(5, 4);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                                break;
+                            default:
+		                        no();
+                        }
+                        break;
+                    case 8:
+                        continueGame(8, 1);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 4);
+                                break;
+                            case 4:
+                                continueGame(4, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 9);
+                                        break;
+                                    case 6:
+                                        compWin(6, 9);
+                                        break;
+                                    case 9:
+                                        continueGame(9, 6);
+                                        tie(2);
+                                    default:
+		                                no();
+                                }
+
+                            case 5:
+                                compWin(2, 4);
+                                break;
+                            case 6:
+                                compWin(2, 4);
+                                break;
+                            case 9:
+                                compWin(2, 4);
+                                break;
+                            default:
+	                    	    no();
+                        }
+                        break;
+                    case 9:
+                        continueGame(9, 6);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 2);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        continueGame(4, 5);
+                                        tie(8);
+                                        break;
+                                    case 5:
+                                        playerWin(5);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 5);
+                                        tie(4);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                                break;
+                            case 2:
+                                continueGame(2, 1);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        continueGame(4, 5);
+                                        tie(8);
+                                        break;
+                                    case 5:
+                                        compWin(5, 4);
+                                        break;
+                                    case 8:
+                                        compWin(8, 4);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                                break;
+                            case 4:
+                                continueGame(4, 1);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        continueGame(2, 8);
+                                        tie(5);
+                                        break;
+                                    case 5:
+                                        continueGame(5, 8);
+                                        tie(2);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 5);
+                                        tie(2);
+                                        break;
+                                    default:
+		                                no();
+                                }
+
+                            case 5:
+                                continueGame(5, 1);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 5);
+                                        break;
+                                    case 4:
+                                        continueGame(4, 2);
+                                        tie(8);
+                                        break;
+                                    case 8:
+                                        compWin(2, 5);
+                                        break;
+                                    default:
+		                                no();
+                                }
+
+                            case 8:
+                                continueGame(8, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        compWin(1, 4);
+                                        break;
+                                    case 2:
+                                        compWin(2, 4);
+                                        break;
+                                    case 4:
+                                        continueGame(4, 1);
+                                        tie(2);
+                                        break;
+                                    default:
+		                                no();
+                                }
+
+                            default:
+		                        no();
+                        }
+                        break;
+                    default:
+                        no();
+                        break;
+                }
+                break;
+            case 4:
+                continueGame(4, 9);
+                ask();
+                move = input.nextInt();
+                switch (move) {
+                    case 1:
+                        continueGame(1, 7);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 8);
+                                break;
+                            case 3:
+                                compWin(3, 8);
+                                break;
+                            case 5:
+                                compWin(5, 8);
+                                break;
+                            case 6:
+                                compWin(6, 8);
+                                break;
+                            case 8:
+                                continueGame(8, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 6);
+                                        break;
+                                    case 5:
+                                        compWin(5, 6);
+                                        break;
+                                    case 6:
+                                        compWin(6, 5);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                            default:
+		                        no();
+                        }
+                        break;
+                    case 2:
+                        continueGame(2, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 6:
+                                        compWin(6, 7);
+                                        break;
+                                    case 7:
+                                        playerWin(7);
+                                        break;
+                                    case 8:
+                                        compWin(8, 7);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                            case 3:
+                                compWin(3, 1);
+                                break;
+                            case 6:
+                                compWin(6, 1);
+                                break;
+                            case 7:
+                                compWin(7, 1);
+                                break;
+                            case 8:
+                                compWin(8, 1);
+                                break;
+                            default:
+		                        no();
+                        }
+                    case 3:
+                        continueGame(3, 1);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 5);
+                                break;
+                            case 5:
+                                continueGame(5, 6);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        continueGame(2, 7);
+                                        playerWin(8);
+                                        break;
+                                    case 7:
+                                        playerWin(7);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 2);
+                                        playerWin(7);
+                                        break;
+                                    default:
+		                                no();
+                                }
+
+                                break;
+                            case 6:
+                                compWin(2, 5);
+                                break;
+                            case 7:
+                                compWin(2, 5);
+                                break;
+                            case 8:
+                                compWin(2, 5);
+                                break;
+                            default:
+		                        no();
+                        }
+                    case 5:
+                        continueGame(5, 6);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                compWin(1, 3);
+                                break;
+                            case 2:
+                                compWin(2, 3);
+                                break;
+                            case 3:
+                                continueGame(3, 7);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        compWin(1, 8);
+                                        break;
+                                    case 2:
+                                        compWin(2, 8);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 2);
+                                        tie(1);
+                                        break;
+                                    default:
+		                                no();
+                                }
+
+                            case 7:
+                                compWin(7, 3);
+                                break;
+                            case 8:
+                                compWin(8, 3);
+                                break;
+                            default:
+		                        no();
+                        }
+                    case 6:
+                        continueGame(6, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 7);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 3);
+                                        break;
+                                    case 3:
+                                        continueGame(3, 2);
+                                        tie(8);
+                                    case 8:
+                                        tie(8);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                                break;
+                            case 2:
+                                compWin(2, 1);
+                                break;
+                            case 3:
+                                compWin(2, 1);
+                                break;
+                            case 7:
+                                compWin(2, 1);
+                                break;
+                            case 8:
+                                compWin(2, 1);
+                                break;
+                            default:
+		                        no();
+                        }
+                    case 7:
+                        continueGame(7, 1);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 5);
+                                break;
+                            case 3:
+                                compWin(3, 5);
+                                break;
+                            case 5:
+                                continueGame(5, 6);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 3);
+                                        break;
+                                    case 3:
+                                        playerWin(3);
+                                        break;
+                                    case 8:
+                                        compWin(8, 3);
+                                        break;
+                                    default:
+		                                no();
+                                }
+
+                            case 6:
+                                compWin(6, 5);
+                                break;
+                            case 8:
+                                compWin(8, 5);
+                                break;
+                            default:
+		                        no();
+                        }
+
+                    case 8:
+                        continueGame(8, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 7);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 3);
+                                        break;
+                                    case 3:
+                                        continueGame(3, 2);
+                                        tie(6);
+                                        break;
+                                    case 6:
+                                        compWin(6, 3);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                            case 2:
+                                compWin(2, 1);
+                                break;
+                            case 3:
+                                compWin(3, 1);
+                                break;
+                            case 6:
+                                compWin(6, 1);
+                                break;
+                            case 7:
+                                compWin(7, 1);
+                                break;
+                            default:
+		                        no();
+                        }
+                    default:
+		                no();
+                }
+                break;
+            case 5:
+                continueGame(5, 9);
+                ask();
+                move = input.nextInt();
+                switch (move) {
+                    case 1:
+                        continueGame(1, 7);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 8);
+                                break;
+                            case 3:
+                                compWin(3, 8);
+                                break;
+                            case 4:
+                                compWin(4, 8);
+                                break;
+                            case 6:
+                                compWin(6, 8);
+                                break;
+                            case 8:
+                                continueGame(8, 2);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 3:
+                                        continueGame(3, 6);
+                                        tie(4);
+                                        break;
+                                    case 4:
+                                        continueGame(4, 6);
+                                        tie(3);
+                                    case 6:
+                                        continueGame(6, 4);
+                                        tie(3);
+                                    default:
+		                                no();
+                                }
+                            default:
+		                        no();
+                        }
+                    case 2:
+                        continueGame(2, 8);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                compWin(1, 7);
+                                break;
+                            case 3:
+                                compWin(3, 7);
+                                break;
+                            case 4:
+                                compWin(4, 7);
+                                break;
+                            case 6:
+                                compWin(6, 7);
+                                break;
+                            case 7:
+                                continueGame(7, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        compWin(1, 6);
+                                        break;
+                                    case 4:
+                                        compWin(4, 6);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 4);
+                                        tie(1);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                                break;
+                            default:
+		                        no();
+                        }
+                    case 3:
+                        continueGame(3, 7);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                compWin(1, 8);
+                                break;
+                            case 2:
+                                compWin(1, 8);
+                                break;
+                            case 4:
+                                compWin(1, 8);
+                                break;
+                            case 6:
+                                compWin(1, 8);
+                                break;
+                            case 8:
+                                continueGame(8, 2);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        continueGame(1, 6);
+                                        tie(4);
+                                        break;
+                                    case 4:
+                                        continueGame(4, 6);
+                                        tie(1);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 4);
+                                        tie(1);
+                                    default:
+		                                no();
+                                }
+                            default:
+		                        no();
+                        }
+                    case 4:
+                        continueGame(4, 6);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                compWin(1, 3);
+                                break;
+                            case 2:
+                                compWin(2, 3);
+                                break;
+                            case 3:
+                                continueGame(3, 7);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        compWin(1, 8);
+                                        break;
+                                    case 2:
+                                        compWin(2, 8);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 2);
+                                        tie(1);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                            case 7:
+                                compWin(7, 3);
+                                break;
+                            case 8:
+                                compWin(8, 3);
+                                break;
+                            default:
+		                        no();
+                        }
+                    case 6:
+                        continueGame(6, 4);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 8);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 7);
+                                        break;
+                                    case 3:
+                                        compWin(3, 7);
+                                        break;
+                                    case 7:
+                                        continueGame(7, 3);
+                                        tie(2);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                                break;
+                            case 2:
+                                continueGame(2, 8);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        compWin(1, 7);
+                                        break;
+                                    case 3:
+                                        compWin(3, 7);
+                                        break;
+                                    case 7:
+                                        continueGame(7, 3);
+                                        tie(1);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                                break;
+                            case 3:
+                                continueGame(3, 7);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        compWin(1, 8);
+                                        break;
+                                    case 2:
+                                        compWin(2, 8);
+                                        break;
+                                    case 8:
+                                        compWin(8, 1);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                            case 7:
+                                continueGame(7, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        continueGame(1, 2);
+                                        tie(8);
+                                        break;
+                                    case 2:
+                                        continueGame(2, 8);
+                                        tie(1);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 2);
+                                        tie(1);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                            case 8:
+                                continueGame(8, 2);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        continueGame(1, 3);
+                                        tie(7);
+                                        break;
+                                    case 3:
+                                        continueGame(3, 7);
+                                        tie(1);
+                                        break;
+                                    case 7:
+                                        continueGame(7, 3);
+                                        tie(1);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                            default:
+		                        no();
+                        }
+                        break;
+                    case 7:
+                        continueGame(7, 3);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                compWin(1, 6);
+                                break;
+                            case 2:
+                                compWin(2, 6);
+                                break;
+                            case 4:
+                                compWin(4, 6);
+                                break;
+                            case 6:
+                                continueGame(6, 4);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        continueGame(1, 8);
+                                        tie(2);
+                                        break;
+                                    case 2:
+                                        continueGame(2, 8);
+                                        tie(1);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 2);
+                                        tie(1);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                                break;
+                            case 8:
+                                compWin(8, 6);
+                                break;
+                            default:
+		                        no();
+                        }
+                    case 8:
+                        continueGame(8, 2);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        compWin(4, 6);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 4);
+                                        tie(7);
+                                        break;
+                                    case 7:
+                                        compWin(7, 6);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                                break;
+                            case 3:
+                                continueGame(3, 7);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        continueGame(1, 4);
+                                        tie(6);
+                                        break;
+                                    case 4:
+                                        continueGame(4, 6);
+                                        tie(1);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 4);
+                                        tie(1);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                                break;
+                            case 4:
+                                continueGame(4, 6);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        compWin(1, 3);
+                                        break;
+                                    case 3:
+                                        continueGame(3, 7);
+                                        tie(1);
+                                        break;
+                                    case 7:
+                                        compWin(7, 3);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                            break;
+                            case 6:
+                                continueGame(6, 4);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        continueGame(1, 3);
+                                        tie(7);
+                                        break;
+                                    case 3:
+                                        continueGame(3, 7);
+                                        tie(1);
+                                        break;
+                                    case 7:
+                                        continueGame(7, 3);
+                                        tie(1);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                                break;
+                            case 7:
+                                continueGame(7, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        compWin(1, 6);
+                                    case 4:
+                                        compWin(4, 1);
+                                        break;
+                                    case 6:
+                                        compWin(6, 1);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                                break;
+                            default:
+		                        no();
+                        }
+                        break;
+                    default:
+		                no();
+                }
+                break;
+            case 6:
+                continueGame(6, 1);
+                ask();
+                move = input.nextInt();
+                switch (move) {
+                    case 2:
+                        continueGame(2, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 3:
+                                compWin(3, 9);
+                                break;
+                            case 4:
+                                compWin(4, 9);
+                                break;
+                            case 7:
+                                compWin(7, 9);
+                                break;
+                            case 8:
+                                compWin(8, 9);
+                                break;
+                            case 9:
+                                continueGame(9, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        compWin(4, 7);
+                                        break;
+                                    case 7:
+                                        continueGame(7, 8);
+                                        tie(4);
+                                        break;
+                                    case 8:
+                                        compWin(4, 8);
+                                        break;
+                                    default:
+		                                no();
+                                }
+                                break;
+                            default:
+		                        no();
+                        }
+                        break;
+                    case 3:
+                        continueGame(3, 9);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 5);
+                                break;
+                            case 4:
+                                compWin(4, 5);
+                                break;
+                            case 5:
+                                continueGame(5, 4);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 7);
+                                        break;
+                                    case 7:
+                                        playerWin(7);
+                                        break;
+                                    case 8:
+                                        compWin(8, 7);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 7:
+                                compWin(7, 5);
+                                break;
+                            case 8:
+                                compWin(8, 5);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 4:
+                        continueGame(4, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 9);
+                                break;
+                            case 3:
+                                compWin(3, 9);
+                                break;
+                            case 7:
+                                compWin(7, 9);
+                                break;
+                            case 8:
+                                compWin(8, 9);
+                                break;
+                            case 9:
+                                continueGame(9, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 7);
+                                        break;
+                                    case 7:
+                                        compWin(7, 2);
+                                        break;
+                                    case 8:
+                                        compWin(8, 7);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 5:
+                        continueGame(5, 4);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 7);
+                                break;
+                            case 3:
+                                compWin(3, 7);
+                                break;
+                            case 7:
+                                continueGame(7, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        continueGame(2, 8);
+                                        tie(9);
+                                    case 8:
+                                        compWin(8, 2);
+                                        break;
+                                    case 9:
+                                        compWin(9, 2);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 8:
+                                compWin(8, 7);
+                                break;
+                            case 9:
+                                compWin(9, 7);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 7:
+                        continueGame(7, 9);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 5);
+                                break;
+                            case 3:
+                                compWin(3, 5);
+                                break;
+                            case 4:
+                                compWin(4, 5);
+                                break;
+                            case 5:
+                                continueGame(5, 4);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        continueGame(2, 8);
+                                        playerWin(3);
+                                        break;
+                                    case 3:
+                                        playerWin(3);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 2);
+                                        playerWin(3);
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 8:
+                                compWin(8, 5);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 8:
+                        continueGame(8, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 9);
+                                break;
+                            case 3:
+                                compWin(3, 9);
+                                break;
+                            case 4:
+                                compWin(4, 9);
+                                break;
+                            case 7:
+                                compWin(7, 9);
+                                break;
+                            case 9:
+                                continueGame(9, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 7);
+                                        break;
+                                    case 4:
+                                        compWin(4, 7);
+                                        break;
+                                    case 7:
+                                        playerWin(7);
+                                    default:
+                                        no();
+                                }
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 9:
+                        continueGame(9, 3);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                continueGame(2, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        compWin(4, 7);
+                                        break;
+                                    case 7:
+                                        continueGame(7, 8);
+                                        tie(4);
+                                        break;
+                                    case 8:
+                                        compWin(8, 7);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 4:
+                                compWin(4, 2);
+                                break;
+                            case 5:
+                                compWin(5, 2);
+                                break;
+                            case 7:
+                                compWin(7, 2);
+                                break;
+                            case 8:
+                                compWin(8, 2);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    default:
+		                no();
+                }
+                break;
+            case 7:
+                continueGame(7, 9);
+                ask();
+                move = input.nextInt();
+                switch (move) {
+                    case 1:
+                        continueGame(1, 4);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                continueGame(2, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 5:
+                                        compWin(5, 6);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 5);
+                                        tie(8);
+                                        break;
+                                    case 8:
+                                        compWin(8, 6);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 3:
+                                continueGame(3, 2);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 5:
+                                        playerWin(5);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 5);
+                                        tie(8);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 5);
+                                        tie(6);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 5:
+                                continueGame(5, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 6);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 2);
+                                        tie(8);
+                                    case 8:
+                                        compWin(8, 6);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 6:
+                                continueGame(6, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        continueGame(2, 3);
+                                        tie(8);
+                                        break;
+                                    case 3:
+                                        continueGame(3, 2);
+                                        tie(8);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 3);
+                                        tie(2);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 8:
+                                continueGame(8, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 6);
+                                        break;
+                                    case 3:
+                                        compWin(3, 6);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 3);
+                                        tie(2);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 2:
+                        continueGame(2, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        playerWin(4);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 4);
+                                        tie(8);
+                                        break;
+                                    case 8:
+                                        compWin(8, 6);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 3:
+                                compWin(3, 1);
+                                break;
+                            case 4:
+                                compWin(4, 1);
+                                break;
+                            case 6:
+                                compWin(6, 1);
+                                break;
+                            case 8:
+                                compWin(8, 1);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 3:
+                        continueGame(3, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 2);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        playerWin(4);
+                                        break;
+                                    case 6:
+                                        compWin(6, 8);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 4);
+                                        tie(6);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 2:
+                                compWin(2, 1);
+                                break;
+                            case 4:
+                                compWin(4, 1);
+                                break;
+                            case 6:
+                                compWin(6, 1);
+                                break;
+                            case 8:
+                                compWin(8, 1);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 4:
+                        continueGame(4, 1);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 5);
+                                break;
+                            case 3:
+                                compWin(3, 5);
+                                break;
+                            case 5:
+                                continueGame(5, 6);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 3);
+                                        break;
+                                    case 3:
+                                        playerWin(3);
+                                        break;
+                                    case 8:
+                                        compWin(8, 3);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 6:
+                                compWin(6, 5);
+                                break;
+                            case 8:
+                                compWin(8, 5);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 5:
+                        continueGame(5, 3);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                compWin(1, 6);
+                                break;
+                            case 2:
+                                compWin(2, 6);
+                                break;
+                            case 4:
+                                compWin(4, 6);
+                                break;
+                            case 6:
+                                continueGame(6, 4);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 1:
+                                        continueGame(1, 2);
+                                        tie(8);
+                                        break;
+                                    case 2:
+                                        continueGame(2, 8);
+                                        tie(1);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 2);
+                                        tie(1);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 8:
+                                compWin(8, 6);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 6:
+                        continueGame(6, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 2);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        continueGame(2, 3);
+                                        tie(8);
+                                        break;
+                                    case 3:
+                                        continueGame(3, 2);
+                                        tie(8);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 2);
+                                        tie(3);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 2:
+                                compWin(2, 1);
+                                break;
+                            case 3:
+                                compWin(3, 1);
+                                break;
+                            case 4:
+                                compWin(4, 1);
+                                break;
+                            case 8:
+                                compWin(8, 1);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 8:
+                        continueGame(8, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 4);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 6);
+                                        break;
+                                    case 3:
+                                        compWin(3, 6);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 3);
+                                        tie(2);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 2:
+                                compWin(2, 1);
+                                break;
+                            case 3:
+                                compWin(3, 1);
+                                break;
+                            case 4:
+                                compWin(4, 1);
+                                break;
+                            case 6:
+                                compWin(6, 1);
+                                break;
                             default:
                                 no();
                         }
@@ -396,56 +2517,730 @@ public class TicTacTwo {
                         no();
                 }
                 break;
-                //done @9:58
-            case 2:
-                continueGame(2, 9);
-                ask();
-                move = input.nextInt();
-                break;
-
-            case 3:
-                continueGame(3, 7);   
-                ask();
-                move = input.nextInt();
-                break;
- 
-            case 4:
-                continueGame(4, 9);
-                ask();
-                move = input.nextInt();
-                break;
-
-            case 5:
-                continueGame(5, 9);
-                ask();
-                move = input.nextInt();
-                break;
-
-            case 6:
-                continueGame(6, 3);
-                ask();
-                move = input.nextInt();
-                break;
-
-            case 7:
-                continueGame(7, 9);
-                ask();
-                move = input.nextInt();
-                break;
-
             case 8:
                 continueGame(8, 9);
                 ask();
                 move = input.nextInt();
+                switch (move) {
+                    case 1:
+                        continueGame(1, 3);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 6);
+                                break;
+                            case 4:
+                                compWin(4, 6);
+                                break;
+                            case 5:
+                                compWin(5, 6);
+                                break;
+                            case 6:
+                                continueGame(6, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 7);
+                                        break;
+                                    case 4:
+                                        compWin(4, 7);
+                                        break;
+                                    case 7:
+                                        continueGame(7, 4);
+                                        tie(2);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 7:
+                                compWin(7, 6);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 2:
+                        continueGame(2, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        compWin(4, 7);
+                                        break;
+                                    case 6:
+                                        compWin(6, 7);
+                                        break;
+                                    case 7:
+                                        compWin(7, 6);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 3:
+                                compWin(3, 1);
+                                break;
+                            case 4:
+                                compWin(4, 1);
+                                break;
+                            case 6:
+                                compWin(6, 1);
+                                break;
+                            case 7:
+                                compWin(7, 1);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 3:
+                        continueGame(3, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 2);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        continueGame(4, 7);
+                                        tie(6);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 7);
+                                        tie(4);
+                                        break;
+                                    case 7:
+                                        continueGame(7, 4);
+                                        tie(6);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 2:
+                                compWin(2, 1);
+                                break;
+                            case 4:
+                                compWin(2, 1);
+                                break;
+                            case 6:
+                                compWin(2, 1);
+                                break;
+                            case 7:
+                                compWin(2, 1);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 4:
+                        continueGame(4, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 7);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 3);
+                                        break;
+                                    case 3:
+                                        continueGame(3, 2);
+                                        tie(6);
+                                        break;
+                                    case 6:
+                                        compWin(6, 3);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 2:
+                                compWin(2, 1);
+                                break;
+                            case 3:
+                                compWin(3, 1);
+                                break;
+                            case 6:
+                                compWin(6, 1);
+                                break;
+                            case 7:
+                                compWin(7, 1);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 5:
+                        continueGame(5, 2);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        compWin(4, 6);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 4);
+                                        tie(7);
+                                        break;
+                                    case 7:
+                                        compWin(7, 6);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 3:
+                            case 4:
+                            case 6:
+                            case 7:
+                            default:
+                                no();
+                        }
+                        break;
+                    case 6:
+                        continueGame(6, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 7);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 3);
+                                        break;
+                                    case 3:
+                                        continueGame(3, 2);
+                                        tie(4);
+                                        break;
+                                    case 4:
+                                        compWin(4, 3);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 2:
+                                compWin(2, 1);
+                                break;
+                            case 3:
+                                compWin(3, 1);
+                                break;
+                            case 4:
+                                compWin(4, 1);
+                                break;
+                            case 7:
+                                compWin(7, 1);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 7:
+                        continueGame(7, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 1:
+                                continueGame(1, 4);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 3);
+                                        break;
+                                    case 3:
+                                        continueGame(3, 2);
+                                        tie(6);
+                                        break;
+                                    case 6:
+                                        compWin(6, 3);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 2:
+                                compWin(2, 1);
+                                break;
+                            case 3:
+                                compWin(3, 1);
+                                break;
+                            case 4:
+                                compWin(4, 1);
+                                break;
+                            case 6:
+                                compWin(6, 1);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    default:
+                        no();
+                }
                 break;
-
             case 9:
                 continueGame(9, 1);  
                 ask();
                 move = input.nextInt();
+                switch (move) {
+                    case 2:
+                        continueGame(2, 7);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 3:
+                                compWin(3, 4);
+                                break;
+                            case 4:
+                                continueGame(4, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 3:
+                                        continueGame(3, 6);
+                                        tie(8);
+                                        break;
+                                    case 6:
+                                        compWin(6, 3);
+                                        break;
+                                    case 8:
+                                        compWin(8, 3);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 5:
+                                compWin(5, 4);
+                                break;
+                            case 6:
+                                compWin(6, 4);
+                                break;
+                            case 8:
+                                compWin(8, 4);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 3:
+                        continueGame(3, 6);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                continueGame(2, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        compWin(4, 7);
+                                        break;
+                                    case 7:
+                                        continueGame(7, 4);
+                                        tie(8);
+                                        break;
+                                    case 8:
+                                        compWin(8, 7);
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 4:
+                                continueGame(4, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        continueGame(2, 8);
+                                        tie(7);
+                                        break;
+                                    case 7:
+                                        continueGame(7, 8);
+                                        tie(2);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 7);
+                                        tie(2);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 5:
+                                continueGame(5, 7);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 4);
+                                        break;
+                                    case 4:
+                                        continueGame(4, 2);
+                                        tie(8);
+                                        break;
+                                    case 8:
+                                        compWin(8, 4);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 7:
+                                continueGame(7, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 4);
+                                        break;
+                                    case 4:
+                                        continueGame(4, 8);
+                                        tie(2);
+                                        break;
+                                    case 8:
+                                        compWin(8, 4);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 8:
+                                continueGame(8, 7);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        compWin(2, 4);
+                                        break;
+                                    case 4:
+                                        continueGame(4, 5);
+                                        tie(2);
+                                        break;
+                                    case 5:
+                                        compWin(5, 4);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 4:
+                        continueGame(4, 5);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                continueGame(2, 4);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 3:
+                                        compWin(3, 7);
+                                        break;
+                                    case 5:
+                                        compWin(5, 7);
+                                        break;
+                                    case 6:
+                                        compWin(6, 7);
+                                        break;
+                                    case 7:
+                                        continueGame(7, 5);
+                                        ask();
+                                        move = input.nextInt();
+                                        switch (move) {
+                                            case 3:
+                                                compWin(3, 6);
+                                                break;
+                                            case 6:
+                                                continueGame(6, 3);
+                                                playerWin(8);
+                                                break;
+                                            case 8:
+                                                compWin(8, 6);
+                                                break;
+                                            default:
+                                                no();
+                                        }
+                                        break;
+                                    case 8:
+                                        compWin(8, 7);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 3:
+                            case 4:
+                            case 5:
+                            case 6:
+                            case 7:
+                                break;
+                            case 8:
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 5:
+                        continueGame(5, 7);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 4);
+                                break;
+                            case 3:
+                                compWin(3, 4);
+                                break;
+                            case 4:
+                                continueGame(4, 6);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        continueGame(2, 8);
+                                        tie(3);
+                                        break;
+                                    case 3:
+                                        continueGame(3, 8);
+                                        tie(2);
+                                        break;
+                                    case 8:
+                                        continueGame(8, 2);
+                                        tie(3);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 6:
+                                compWin(6, 4);
+                                break;
+                            case 8:
+                                compWin(8, 4);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 6:
+                        continueGame(6, 3);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                continueGame(2, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 4:
+                                        compWin(4, 7);
+                                        break;
+                                    case 7:
+                                        continueGame(7, 8);
+                                        tie(4);
+                                        break;
+                                    case 8:
+                                        compWin(8, 7);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 4:
+                                compWin(4, 2);
+                                break;
+                            case 5:
+                                compWin(5, 2);
+                                break;
+                            case 7:
+                                compWin(7, 2);
+                                break;
+                            case 8:
+                                compWin(8, 2);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 7:
+                        continueGame(7, 8);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                continueGame(2, 5);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 3:
+                                        continueGame(3, 6);
+                                        tie(4);
+                                        break;
+                                    case 4:
+                                        continueGame(4, 3);
+                                        tie(6);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 3);
+                                        tie(4);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 3:
+                                continueGame(3, 6);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        continueGame(2, 5);
+                                        tie(4);
+                                        break;
+                                    case 4:
+                                        continueGame(4, 2);
+                                        tie(5);
+                                        break;
+                                    case 5:
+                                        continueGame(5, 4);
+                                        tie(2);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 4:
+                                continueGame(4, 2);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 3:
+                                        compWin(3, 5);
+                                        break;
+                                    case 5:
+                                        compWin(5, 3);
+                                        break;
+                                    case 6:
+                                        compWin(6, 5);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 5:
+                                continueGame(5, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        continueGame(2, 6);
+                                        tie(4);
+                                        break;
+                                    case 4:
+                                        compWin(4, 2);
+                                        break;
+                                    case 6:
+                                        compWin(6, 2);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 6:
+                                continueGame(6, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        continueGame(2, 5);
+                                        tie(4);
+                                        break;
+                                    case 4:
+                                        compWin(4, 2);
+                                        break;
+                                    case 5:
+                                        compWin(5, 2);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    case 8:
+                        continueGame(8, 7);
+                        ask();
+                        move = input.nextInt();
+                        switch (move) {
+                            case 2:
+                                compWin(2, 4);
+                                break;
+                            case 3:
+                                compWin(3, 4);
+                                break;
+                            case 4:
+                                continueGame(4, 3);
+                                ask();
+                                move = input.nextInt();
+                                switch (move) {
+                                    case 2:
+                                        continueGame(2, 5);
+                                        break;
+                                    case 5:
+                                        continueGame(5, 2);
+                                        break;
+                                    case 6:
+                                        continueGame(6, 2);
+                                        break;
+                                    default:
+                                        no();
+                                }
+                                break;
+                            case 5:
+                                compWin(5, 4);
+                                break;
+                            case 6:
+                                compWin(6, 4);
+                                break;
+                            default:
+                                no();
+                        }
+                        break;
+                    default:
+                        no();
+                }
                 break;
             default:
                 no();
+                break;
         }
 
 
@@ -461,7 +3256,7 @@ public class TicTacTwo {
     public static void compWin (int playerMove, int compMove) {
         av[playerMove-1] = "X";
         av[compMove-1] = "O";
-        System.out.println("You put an \"X\" on " + playerMove + " and the computer WON by puttin an \"O\" on " + compMove + ".");
+        System.out.println("You put an \"X\" on " + playerMove + " and the computer WON by putting an \"O\" on " + compMove + ".");
         printBoard();
         System.out.println("\"You can't win unless you learn how to lose\" by Kareem Abdul-Jabbar");
         System.exit(0);
