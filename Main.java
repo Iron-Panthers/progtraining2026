@@ -12,20 +12,26 @@ public static void main (String [] args){
      int guess = 0;
      int attempts = 0;
      if (scan.nextLine().equals("yes")){
-         System.out.print("Enter your guess (1-100): ");
-        guess = scan.nextInt(); // Use the existing Scanner object
+        System.out.println("Great! I'm thinking of a number between 1 and 100. Can you guess it?");
+       
+        while (guess != number) {
+           guess = scan.nextInt();
         attempts++;
         if (guess < number) {
             System.out.println("Too low!");
         } else if (guess > number) {
             System.out.println("Too high!");
+            
         } else {
             System.out.println("Correct! You guessed the number in " + attempts + " attempts.");
+            break;
         }
-        
-     } else {
+        }
+ } else {
          System.out.println("Ok, maybe next time!");
      }
+    
+    
 
      
     
