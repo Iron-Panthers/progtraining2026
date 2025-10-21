@@ -70,8 +70,10 @@ public class Project {
     for (int i = 0; i < numberArray.length; i++) {
       for (int j = 0; j < numberArray[i].length; j++){
         System.out.print(numberArray[i][j] + " ");
+       
       }
       System.out.println();
+      invalid=true;
       
 
     //  System.out.println(numberArray[xCoord-1][yCoord-1]);
