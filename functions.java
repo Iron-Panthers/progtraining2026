@@ -1,16 +1,32 @@
 package progtraining2026;
 
+import java.util.Scanner;
+
 public class functions {
     public static void main(String[] args) {
-    startCar("huge");
-    stopCar("ran out of gas");
-    honkHorn("beep beep");
+    
+    Scanner button1 = new Scanner(System.in);
+    boolean button = button1.nextBoolean();
+        if (button) {
+            
+            startCar("huge");
+            System.out.println(startCar("huge"));
+        } 
 
+        else {
+        stopCar("we forgot the key");
+        }
+       
+        Scanner button2 = new Scanner(System.in);
+        String hornSound = button2.nextLine();
+        if (hornSound.equals("beep")) {
+            honkHorn("beep");
+        }
     }
 
     
-    public static void startCar(String keyType) {
-        System.out.println("The car is started using a " + keyType + " key.");
+    public static String startCar(String keyType) {
+        return "The car is started using a " + keyType + " key.";
     }
 
     
