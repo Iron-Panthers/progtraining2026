@@ -18,9 +18,11 @@ public class BankAccount {
     }
 
     public void introduceAccountHolder() {
+        System.out.println("Enter account holder's name and inf0");
         accountHolderName = scanner.nextLine();
         balance = scanner.nextDouble();
         ageOfAccountHolder = scanner.nextInt();
+        hadDebt = scanner.nextBoolean();
         System.out.println("Account Holder: " + accountHolderName);
         System.out.println("Balance: $" + balance);
         System.out.println("Age of Account Holder: " + ageOfAccountHolder);
