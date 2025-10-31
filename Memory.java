@@ -204,7 +204,7 @@ public class Memory {
 
             if (points < 0) {
                 System.out.println("Game over. \n You made too many wrong matches.");
-                System.out.println("You got to level " + level + ".");
+                System.out.println("Your point total is: " + points);
                 return;
             }
 
@@ -214,7 +214,7 @@ public class Memory {
             }
             level++;
             ArrayList<Memory> newRow = new ArrayList<>();
-            for (int j = 0; j < 3; j++) {
+            for (int j = 0; j < level + 3; j++) {
                 newRow.add(new Memory(-1, " ", false, " ", false));
             }
             cards.add(newRow);
