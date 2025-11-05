@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BetterthanKalista {
+public class BHS_DramaProject{
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
         System.out.println ("What is your age?");

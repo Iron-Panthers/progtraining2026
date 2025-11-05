@@ -1,8 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Survey{
-/
+public class Randoms{
 public static void main (String [] args){
 
 Scanner input = new Scanner(System.in);

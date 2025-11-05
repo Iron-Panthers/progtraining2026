@@ -1,4 +1,3 @@
-
 public class Hair {
     String color;
     double length;
