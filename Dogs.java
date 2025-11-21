@@ -6,7 +6,7 @@ public class Dogs {
     double hungerlvl = 25.5;
     String animal = "Dog";
     boolean tailwagging = true;
-    double happinessLevel = 8.5;
+    double happinessLevel = 6.5;
     Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
         Dogs dog = new Dogs();
@@ -28,7 +28,7 @@ public class Dogs {
         } else {
             System.out.println("Your dog could be happier, take them on a walk or give them a treat!");
         }
-        dog.input.nextLine(); 
+        
         String action = dog.input.nextLine();
     
         if (action.equals("walk")) {
